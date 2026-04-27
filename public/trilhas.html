@@ -10,16 +10,12 @@
 
 <nav class="navbar bg-success text-white px-3 d-flex justify-content-between align-items-center">
   <!-- Título -->
-  <span class="navbar-brand text-white">🌿 Trilhas</span>
+  <span class="navbar-brand text-white align-items-center">🌿 Trilhas</span>
 
   <!-- Ícone de perfil com contador -->
-  <div class="position-relative" onclick="irPara('perfil.html')" style="cursor:pointer;">
-    <i class="bi bi-person-circle text-white" style="font-size:30px;"></i>
-    <span id="contador" 
-          class="badge bg-danger position-absolute top-0 start-100 translate-middle">
-      0
-    </span>
-  </div>
+  <div onclick="irPara('perfil.html')" style="cursor:pointer;">
+  <i class="bi bi-person-circle text-white" style="font-size:30px;"></i>
+</div>
 </nav>
 
 <div id="menu"></div>
@@ -111,6 +107,7 @@ fetch('menu.html')
 function irPara(pagina){
   window.location.href = pagina;
 }
+
 
 // INIT
 carregar();

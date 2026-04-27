@@ -20,7 +20,7 @@ Node.js
 NPM ou Yarn
 Conta no MongoDB Atlas (banco em nuvem)
 📁 Clonar o projeto
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Jhonmerlin/MVP-Mobile-Teres-polis-Verde
 cd seu-repositorio
 
 📥 Instalar dependências

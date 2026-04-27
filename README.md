@@ -5,9 +5,66 @@
 
 Este projeto foi desenvolvido com o objetivo de permitir que usuários visualizem trilhas, cachoeiras e eventos, além de realizarem inscrições de forma simples e rápida.
 
-A aplicação conta com um sistema de autenticação, gerenciamento de itens e controle de inscrições, funcionando de forma integrada entre frontend, backend e banco de dados em nuvem.
+A aplicação conta com um sistema de autenticação, gerenciamento de itens e controle de inscrições, funcionando de forma integrada entre frontend, backend e banco de dados em nuvem. O foco principal é oferecer uma experiência fluida para usuários em dispositivos mobile, com navegação simples e responsiva.
 
 ---
+▶️ Como executar o projeto
+
+Para rodar o sistema localmente, siga os passos abaixo:
+
+📦 Pré-requisitos
+
+Antes de iniciar, você precisa ter instalado:
+
+Node.js
+NPM ou Yarn
+Conta no MongoDB Atlas (banco em nuvem)
+📁 Clonar o projeto
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+
+📥 Instalar dependências
+
+Dentro da pasta do backend, execute:
+
+npm install
+⚙️ Configurar o banco de dados
+
+O projeto utiliza MongoDB em nuvem.
+Configure a conexão no arquivo principal do backend:
+
+mongoose.connect(process.env.MONGO_URI)
+
+Depois, crie um arquivo .env na raiz do backend:
+
+MONGO_URI=sua_string_de_conexao_do_mongodb_atlas
+🚀 Iniciar o servidor
+
+Para rodar a aplicação:
+
+node servidor.js
+
+Ou, se preferir modo desenvolvimento:
+
+npx nodemon servidor.js
+🌐 Acessar a aplicação
+
+Após iniciar o servidor:
+
+Backend: http://localhost:3000
+Frontend: abrir o arquivo index.html ou rodar via extensão Live Server
+
+🔗 Integração
+
+O frontend se comunica com o backend através de requisições HTTP (fetch), consumindo rotas como:
+
+/registrar
+/login
+/itens
+/inscrever
+/minhas-inscricoes
+
+
 
 ## 🚀 Funcionalidades
 
